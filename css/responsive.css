@@ -1,0 +1,1246 @@
+@media (max-width: 1200px) {
+
+/* header */
+.header__top-panel { 
+	position: relative;
+	padding: 11px 0 14px;
+	border-bottom: 1px solid #EBEBEB;
+	}
+
+/* logo */
+.logo__img { 
+	width: 172px;
+	transform: translateY(0px);
+	}
+
+.logo__text { 
+	display: none;
+	}
+
+/* contact-info */
+.contact-info { 
+	display: none;
+	}
+
+/* header__mob-panel */
+.header__mob-panel { 
+	display: flex;
+	align-items: center;
+	}
+
+/* header__mob-btn */
+.header__mob-btn { 
+	position: relative;
+	margin: 0 0 0 40px;
+	width: 55px;
+	height: 55px;
+	background: rgba(108, 136, 174, 0.8);
+	border-radius: 100%;
+	cursor: pointer;
+	}
+
+.header__mob-btn:before { 
+	position: absolute;
+	display: block;
+	width: 55px;
+	height: 55px;
+	top: 0;
+	left: 0;
+	background: url(../img/bg/mob-btn.svg) center no-repeat;
+	content: "";
+	transition: .3s opacity;
+	}
+
+.header__mob-btn.open:before { 
+	opacity: 0;
+	}
+
+.header__mob-btn:after {
+	position: absolute;
+	display: block;
+	width: 55px;
+	height: 55px;
+	top: 0;
+	left: 0;
+	background: url(../img/bg/mob-btn-close.svg) center no-repeat;
+	opacity: 0;
+	content: "";
+	transition: .3s opacity;
+	}
+
+.header__mob-btn.open:after { 
+	opacity: 1;
+	}
+
+/* header__mob-dropdown */
+.header__mob-dropdown { 
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 30px 45px 40px;
+	width: 100%;
+	top: 84px;
+	left: 0;
+	background: #fff;
+	border-radius: 0 0 30px 30px;
+	opacity: 0;
+	visibility: hidden;
+	transition: .3s all;
+	}
+
+.header__mob-dropdown.open { 
+	opacity: 1;
+	visibility: visible;
+	}
+
+/* header__mob-navi */
+.header__mob-navi { 
+	margin: 0 0 40px;
+	}
+
+.header__mob-navi ul { 
+	list-style: none;
+	}
+
+.header__mob-navi li { 
+	margin: 0 0 15px;
+	font-size: 16px;
+	text-align: center;
+	text-transform: uppercase;
+	line-height: 20px;
+	}
+
+.header__mob-navi li:last-child { 
+	margin: 0;
+	}
+
+.header__mob-navi a { 
+	color: #3B3B3B;
+	}
+
+/* header__mob-dropdown .btn */
+.header__mob-dropdown .btn { 
+	margin: 0 0 20px;
+	}
+
+/* contact-info */
+.header__mob-panel .contact-info { 
+	padding: 10px 0 0;
+	}
+
+.header__mob-panel .contact-info li { 
+	margin: 0 0 15px;
+	}
+
+.header__mob-panel .contact-info li:last-child { 
+	margin: 0;
+	}
+
+/* header__bottom-panel */
+.header__bottom-panel { 
+	display: none;
+	}
+
+/* clinic-info */
+.clinic-info__content { 
+	position: relative;
+	margin: 0 0 60px;
+ 	}
+
+.clinic-info__content p { 
+	margin: 0 0 60px;
+ 	}
+
+.small-text { 
+	max-width: 342px;
+	}
+
+.small-text br { 
+	display: none;
+	}
+
+.clinic-info__video { 
+	position: absolute;
+	margin: 0;
+	width: 200px;
+	right: 0;
+	bottom: 0;
+	}
+
+.clinic-info__photo a:before { 
+	width: 56px;
+	height: 56px;
+	background: url(../img/bg/play-i.svg) 14px center no-repeat #fff;
+	background-size: 26px 24px;
+	}
+
+/* advantages */
+.advantages { 
+	gap: 15px 15px;
+	grid-template-columns: repeat(2, 182px);
+	justify-content: center;
+	}
+
+.advantages__item { 
+	padding: 20px 0;
+	}
+
+/* perfect-clinic */
+.perfect-clinic { 
+	margin: -360px 0 0;
+	padding: 435px 0 60px;
+	}
+
+.perfect-clinic__top-panel { 
+	justify-content: center;
+	align-items: center;
+	margin: 0 0 35px;
+	}
+
+.perfect-clinic__left-col { 
+	margin: 0 30px 0 0;
+	width: auto;
+	}
+
+.perfect-clinic__right-col { 
+	width: auto;
+	}
+
+.gl-text_indent_bt { 
+	margin: 0 0 10px;
+	}
+
+.gl-text { 
+	padding: 0 0 0 60px;
+	font-size: 24px;
+	line-height: 42px;
+	}
+
+.gl-text:before { 
+	width: 34px;
+	height: 34px;
+	}
+
+.gl-text__highlight:before { 
+	height: 42px;
+	top: 0;
+	}
+
+.gl-text_indent_left { 
+	padding: 0;
+	}
+
+.gl-text br { 
+	display: none;
+	}
+
+.gl-text_size_sm { 
+	padding: 0 0 0 52px;
+	font-size: 18px;
+	line-height: 28px;
+	letter-spacing: 1px;
+	}
+
+.gl-text_size_sm:before { 
+	width: 22px;
+	height: 22px;
+	background-size: 100%;
+	}
+
+.gl-text_size_sm .gl-text__highlight:before { 
+	height: 28px;
+	top: 2px;
+	border-radius: 4px;
+	}
+
+.gl-text__highlight { 
+	padding: 0 10px;
+	}
+
+/* gallery */
+.gallery { 
+	grid-gap: 25px;
+	}
+
+.gallery img { 
+	border-radius: 20px;
+	}
+
+.gallery__play-btn { 
+	width: 62px;
+	height: 62px;
+	}
+
+/* section */
+.section { 
+	padding: 60px 0;
+	}
+
+/* title */
+.title { 
+	margin: 0 0 30px;
+	}
+
+.title__highlight { 
+	display: inline;
+	padding: 0;
+	}
+
+.title__highlight:before { 
+	display: none;
+	}
+
+.title__highlight span { 
+	color: #2E4058;
+	}
+
+.title br { 
+	display: none;
+	}
+
+/* services */
+.services { 
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 50px 60px;
+	margin: 0 0 60px;
+	padding: 0 56px;
+	}
+
+.services li { 
+	margin: 0;
+	}
+
+.services__item { 
+	position: relative;
+	display: block;
+	padding: 0 0 80px;
+	height: 100%;
+	box-shadow: none;
+	border-radius: 0;
+	}
+
+.services__photo { 
+	margin: 0 0 30px;
+	width: 100%;
+	}
+
+.services__col { 
+	display: block;
+	}
+
+.services__col-item:last-child { 
+	position: absolute;
+	padding: 20px 0 0;
+	left: 0;
+	bottom: 0;
+	}
+
+.services__description {
+	padding: 0;
+	}
+
+.services__title { 
+	margin: 0 0 20px;
+	font-size: 20px;
+	letter-spacing: 1px;
+	line-height: 24px;
+	}
+
+.services__description p { 
+	font-size: 16px;
+	line-height: 22px;
+	}
+
+/* planning */
+.planning { 
+	display: block;
+	}
+
+.planning__left-col { 
+	margin: 0;
+	}
+
+.planning__example { 
+	margin: 0 40px 0 0;
+	width: 176px;
+	}
+
+.planning__photo { 
+	margin: 0 0 45px;
+	}
+
+.steps li { 
+	padding: 0 0 0 53px;
+	}
+
+/* dignities */
+.dignities { 
+	position: relative;
+	margin: 0 36px;
+	}
+
+.dignities__photo { 
+	margin: 0 70px 0 0;
+	}
+
+.dignities__description { 
+	display: block;
+	}
+
+.dignities__item { 
+	margin: 0 0 20px;
+	}
+
+.dignities__item:last-child { 
+	position: absolute;
+	margin: 0;
+	max-width: 273px;
+	left: 0;
+	bottom: 20px;
+	}
+
+.dignities__title { 
+	margin: 0 0 20px;
+	font-size: 20px;
+	line-height: 24px;
+	}
+
+.dignities__description p { 
+	font-size: 16px;
+	line-height: 20px;
+ 	}
+
+/* subtitle */
+.subtitle { 
+	letter-spacing: -0.2px;
+	}
+
+/* equipment */
+.equipment { 	
+	grid-template-areas: "big small2" "big big2" "small big2";
+	gap: 30px 35px;
+	}
+
+.equipment__item { 
+	border-radius: 15px;
+	}
+
+.equipment__item:nth-child(1) { 
+	width: auto;
+	min-height: 420px;
+	}
+
+.equipment__item:nth-child(2) { 
+	min-height: 190px;
+	border-radius: 15px;
+	}
+
+.equipment__item:nth-child(2):before { 
+	border-radius: 15px;
+	}
+
+.equipment__item:nth-child(3) { 
+	min-height: 190px;
+	border-radius: 15px;
+	}
+
+.equipment__item:nth-child(3):before { 
+	border-radius: 15px;
+	}
+
+.equipment__item:nth-child(4) { 
+	width: auto;
+	min-height: 420px;
+	}
+
+.equipment__content { 
+	padding: 15px 20px;
+	}
+
+.equipment__title { 
+	margin: 0 0 20px;
+	font-size: 20px;
+	line-height: 24px;
+	}
+
+/* team */
+.team { 
+	padding: 0;
+	}
+
+.team:before,
+.team:after { 
+	display: none;
+	}
+
+.team img { 
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	}
+
+/* reviews-slider */
+.reviews-slider .swiper-slide { 
+	width: 360px;
+	}
+
+.review__text { 
+	margin: 0 0 35px;
+	font-size: 16px;
+	}
+
+.review__text span { 
+	padding: 0 40px;
+	}
+
+/* license */
+.license { 
+	display: block;
+	}
+
+.license__left-col { 
+	margin: 0 0 40px;
+	width: 100%;
+	}
+
+.license .title { 
+	display: inline-block;
+	vertical-align: top;
+	}
+
+.license__right-col { 
+	padding: 0 60px;
+	}
+
+/* schedule-form */
+.schedule-form { 
+	position: relative;
+	padding: 120px 50px 0;
+	}
+
+.schedule-form:before {
+	position: absolute;
+	display: block;
+	width: 106px;
+	height: 139px;
+	top: -50px;
+	left: 50%;
+	transform: translateX(-50%);
+	background: url(../img/bg/time-i-w.svg) center no-repeat;
+	background-size: 100%;
+	content: "";
+	}
+
+.schedule-form form { 
+	margin: 0 0 50px;
+	}
+
+.title_star_white { 
+	padding: 0;
+	}
+
+.title_star_white:after { 
+	display: none;
+	}
+
+.schedule-form__right-col { 
+	display: none;
+	}
+
+.input-date:before { 
+	height: 34px;
+	right: 62px;
+	}
+
+.input-date:after {
+	width: 62px; 
+	height: 50px;
+	background-size: 38px;
+ 	}
+
+.input-date input { 
+	padding-right: 50px;
+	}
+
+.gl-radio label { 
+	font-size: 14px;
+	}
+
+/* form */
+label { 
+	margin: 0 0 6px;
+	}
+
+input[type="tel"], 
+input[type="text"], 
+input[type="email"], 
+input[type="password"] { 
+	padding: 0 15px;
+	height: 50px;
+	border-radius: 10px;
+	}
+
+textarea { 
+	padding: 15px;
+	height: 100px;
+	border-radius: 10px;
+	}
+
+/* phone-consultation */
+.phone-consultation { 
+	padding: 20px 35px 20px 30px;
+	}
+
+.articles { 
+	grid-template-columns: auto;
+	grid-template-areas: "big big2" "big big2" "small small2";
+	gap: 40px 8px;
+	margin: 0 0 40px;
+	}
+
+.articles__item:nth-child(2) .btn, 
+.articles__item:nth-child(3) .btn {
+	margin: 0 0 0 25px;
+	max-width: 234px;
+	}
+
+.gl-link { 
+	font-size: 20px;
+	line-height: 30px;
+	}
+
+/* footer */
+.footer__info { 
+	padding: 12px 0 40px;
+	}
+
+.footer__col { 
+	display: flex;
+	flex-wrap: wrap;
+	gap: 40px 0;
+	}
+
+.footer__item:first-child { 
+	width: 240px;
+	}
+
+.footer__item:last-child { 
+	display: flex;
+	justify-content: space-between;
+	gap: 0 25px;
+	padding: 0;
+	width: 100%;
+	}
+
+.footer__logo { 
+	margin: 0 0 5px;
+	}
+
+.footer__sm-text { 
+	font-size: 14px;
+	line-height: 18px;
+	}
+
+.footer__contacts { 
+	margin: 0;
+	padding: 16px 0 0;
+	}
+
+.footer__info-list { 
+	margin: 0;
+	padding: 16px 0 0;
+	order: -1;
+	}
+
+.callback-form fieldset { 
+	margin: 0 0 20px;
+	}
+
+.callback-form .btn { 
+	padding: 14px 37px;
+	white-space: nowrap;
+	}
+
+.footer__contacts li { 
+	margin: 0 0 11px;
+	}
+
+}
+
+@media (max-width: 767px) {
+
+/* header */
+.header__top-panel { 
+	padding: 13px 0 0;
+	border-bottom: 0;
+	}
+
+.logo__img { 
+	width: 90px;
+	}
+
+.header__mob-panel > .btn { 
+	display: none;
+	}
+
+.header__mob-btn { 
+	margin: 0;
+	width: 35px;
+	height: 35px;
+	}
+
+.header__mob-btn:before { 
+	width: 35px;
+	height: 35px;
+	background-size: 19px 12px;
+	}
+
+.header__mob-btn:after { 
+	width: 35px;
+	height: 35px;
+	background-size: 20px;
+	}
+
+.header__mob-dropdown { 
+	padding: 25px 0 40px;
+	top: 61px;
+	border-top: 1px solid #EBEBEB;
+	}
+
+.header__mob-navi { 
+	margin: 0 0 25px;
+	}
+
+/* clinic-info */
+.clinic-info { 
+	padding: 20px 0 0;
+	}
+
+.clinic-info__description { 
+	padding: 0;
+	}
+
+/* title */
+.title { 
+	margin: 0 0 20px;
+	font-size: 24px;
+	line-height: 30px;
+	}
+
+.title_border_bt { 
+	margin: 0 0 17px;
+	padding: 0 0 17px;
+	}
+
+/* clinic-info */
+.clinic-info__content p { 
+	font-size: 16px;
+	line-height: 20px;
+	}
+
+/* subtitle */
+.subtitle { 
+	margin: 0 0 30px;
+	font-size: 16px;
+	line-height: 20px;
+	}
+
+.subtitle__highlight { 
+	padding: 0 3px;
+	}
+
+.subtitle__highlight:before { 
+	height: 20px;
+	top: 1px;
+	border-radius: 3px;
+	}
+
+/* services */
+.services { 
+	padding: 0;
+	}
+
+/* dignities */
+.dignities { 
+	margin: 0;
+	}
+
+.dignities__photo { 
+	margin: 0 40px 0 0;
+	}
+
+/* license */
+.license__right-col { 
+	padding: 0;
+	}
+
+/* articles */
+.articles__item { 
+	padding: 30px;
+	}
+
+.articles__item:nth-child(2) { 
+	padding: 30px;
+	}
+
+.articles__item:nth-child(3) { 
+	padding: 30px;
+	}
+
+.articles__item:nth-child(2) .btn, 
+.articles__item:nth-child(3) .btn { 
+	margin: 0;	
+	}
+
+}
+
+@media (max-width: 680px) {
+
+/* perfect-clinic */
+.perfect-clinic__top-panel { 
+	display: block;
+	}
+
+.perfect-clinic__left-col { 
+	margin: 0 0 20px;
+	justify-content: flex-start;
+	}
+
+/* services */
+.services { 
+	gap: 30px 20px;
+	}
+
+.services .btn { 	
+	font-size: 16px;
+	}
+
+/* dignities */
+.dignities { 
+	display: block;
+	}
+
+.dignities__item:last-child { 
+	position: static;
+	}
+
+.dignities__photo {
+	margin: 0 auto 40px; 
+	width: 100%;
+	}
+
+.dignities__photo-sticker { 
+	width: 78px;
+	top: 15px;
+	right: 15px;
+	}
+
+/* schedule-form */
+.schedule-form { 
+	padding: 120px 0 0;
+	}
+
+.schedule-form__col { 
+	grid-template-columns: 1fr;
+	gap: 20px 0;
+	}
+
+/* schedule-form */
+label { 
+	margin: 0 0 10px;
+	}
+
+.schedule-form fieldset { 
+	margin: 0 0 20px;
+	}
+
+/* articles */
+.articles { 
+	display: block;
+	grid-template-areas: none;
+	}
+
+.articles__item { 
+	margin: 0 0 30px;
+	}
+
+.articles__item:last-child { 
+	margin: 0;
+	}
+
+/* footer */
+.footer__col { 
+	display: block;
+	}
+
+.footer__text { 
+	margin: 0 0 25px;
+	}
+
+.footer__text_indent_bt_sm { 
+	margin: 0 0 10px;
+	}
+
+.footer__item {
+	margin: 0 0 30px; 
+	padding: 0;
+	}
+
+.footer__item:last-child { 
+	margin: 0;
+	}
+
+.footer__item:first-child { 
+	width: 100%;
+	}
+
+.footer__item:last-child { 
+	display: block;
+	}
+
+.callback-form fieldset { 
+	justify-content: flex-start;
+	}
+
+.footer__title { 
+	margin: 0 0 20px;
+	}
+
+.footer__contacts { 
+	margin: 0 0 30px;
+	padding: 0;
+	}
+
+.footer__info-list { 
+	margin: 0 0 45px;
+	padding: 0;
+	}
+
+.footer__navi_indent_bt { 
+	margin: 0 0 20px;
+	}
+
+.footer__bottom-panel__in { 
+	display: block;
+	}
+
+.footer__bottom-panel span { 
+	margin: 0 0 10px;
+	text-align: center;
+	}
+
+.footer__bottom-panel span:last-child { 
+	margin: 0;
+	}
+
+.footer__sm-text { 
+	font-size: 16px;
+	line-height: 20px;
+	}
+
+}
+
+@media (max-width: 620px) {
+
+/* clinic-info */
+.clinic-info__content p { 
+	margin: 0 0 355px;
+	}
+
+.clinic-info__video { 
+	left: 50%;
+	right: auto;
+	bottom: 187px;
+	transform: translateX(-50%);
+	}
+
+/* advantages */
+.advantages { 
+	grid-template-columns: 1fr 1fr;
+	}
+
+/* perfect-clinic */
+.perfect-clinic { 
+	padding: 400px 0 60px;
+	}
+
+/* gallery */
+.gallery { 
+	display: block;
+	padding: 0 35px;
+	}
+
+.gallery__item { 
+	margin: 0 0 20px;
+	}
+
+.gallery__item:last-child { 
+	margin: 0;
+	}
+
+/* equipment */
+.equipment { 
+	display: block;
+	}
+
+.equipment__item { 
+	margin: 0 0 20px;
+	}
+
+.equipment__item:last-child { 
+	margin: 0;
+	}
+
+.equipment__content { 
+	padding: 15px;
+	}
+
+.license__list { 
+	flex-wrap: wrap;
+	}
+
+.license__list li { 
+	margin: 0 0 20px;
+	width: 100%;
+	}
+
+.license__list li:last-child { 
+	margin: 0;
+	}
+
+.license__list a {
+	margin: 0 auto; 
+	width: 178px;
+	}
+
+}
+
+@media (max-width: 580px) {
+
+/* services */
+.services { 
+	grid-template-columns: 100%;
+	}
+
+.services .btn { 
+	font-size: 18px;
+	}
+
+.planning__right-col { 
+	display: block;
+	}
+
+.planning__example { 
+	margin: 0 auto 40px;
+	}
+
+.planning__photo { 
+	margin: 0 0 20px;
+	}
+
+/* steps */
+.steps li { 
+	margin: 0 0 15px;
+	padding: 0 0 0 30px;
+	font-size: 16px;
+	line-height: 20px;
+	}
+
+.steps li:before { 
+	width: 20px;
+	height: 20px;
+	background-size: 100%;
+	}
+
+.steps__highlight { 
+	padding: 0 3px;
+	}
+
+.steps__highlight:before { 
+	height: 20px;
+	top: 1px;
+	border-radius: 3px;
+	}
+
+.steps li br { 
+	display: none;
+	}
+
+.phone-consultation { 
+	display: block;
+	padding: 20px;
+	}
+
+.phone-consultation dt { 
+	margin: 0 0 20px;
+	letter-spacing: 1px;
+	}
+
+.phone-consultation dd { 
+	letter-spacing: 1px;
+	}
+
+/* modal */
+.hystmodal__wrap { 
+	padding: 5px;
+	}
+
+.make-appointment .modal-content { 
+	padding: 30px 20px;
+	}
+
+.make-appointment__title { 
+	margin: 0 0 25px;
+	font-size: 18px;
+	line-height: 24px;
+	}
+
+.gl-radio input { 
+	margin: 0 15px 0 0;
+	}
+
+.gl-radio label { 
+	letter-spacing: -0.2px;
+	}
+
+}
+
+@media (max-width: 480px) {
+
+/* clinic-info */
+.clinic-info { 
+	padding: 20px 0 30px;
+	}
+
+.clinic-info__content { 
+	margin: 0 0 50px;
+	}
+
+/* advantages */
+.advantages { 
+	grid-template-columns: 182px;
+	gap: 20px 0;
+	}
+
+/* section */
+.section { 
+	padding: 30px 0;
+	}
+
+/* perfect-clinic */
+.perfect-clinic { 
+	margin: 0;
+	padding: 30px 0;
+	}
+
+/* dignities */
+.dignities__photo {
+	max-width: 235px;
+	}
+
+/* team */
+.team { 
+	margin: 0 0 20px;
+	}
+
+/* subtitle */
+.subtitle br { 
+	display: none;
+	}
+
+/* gl-link */
+.gl-link { 
+	padding: 0 60px 0 0;
+	font-size: 12px;
+	}
+
+.gl-link:after { 
+	width: 40px;
+	background-size: 100%;
+	}
+
+/* reviews-slider */
+.reviews-slider.swiper { 
+	margin: 0 0 30px;
+	}
+
+.reviews-slider .swiper-slide { 
+	width: 260px;
+	}
+
+.review__photo-wrap:before { 
+	width: 20px;
+	height: 20px;
+	top: 20px;
+	left: 20px;
+	background-size: 100%;
+	}
+
+.review__photo-wrap:after { 
+	width: 20px;
+	height: 20px;
+	top: 20px;
+	right: 20px;
+	background-size: 100%;
+	}
+
+.review__text { 
+	justify-content: flex-start;
+	margin: 0 0 15px;
+	}
+
+.review__text span { 
+	padding: 0 0 0 30px;
+	}
+
+.reviews-slider .swiper-scrollbar { 
+	margin: 40px auto 0;
+ 	}
+
+.reviews-slider .swiper-scrollbar-drag { 
+	width: 20px !important;
+	height: 20px !important;
+	top: -9px !important;
+	}
+
+/* articles */
+.articles__item { 
+	padding: 15px;
+	border-radius: 15px;
+	}
+
+.articles__item:nth-child(2) { 
+	padding: 15px;
+	}
+
+.articles__item:nth-child(3) { 
+	padding: 15px;
+	}
+
+.articles__photo { 
+	margin: 0 0 20px;
+	}
+
+.articles__title { 
+	font-size: 18px;
+	line-height: 22px;
+	}
+
+.articles__top-panel { 
+	margin: 0 0 20px;
+	}
+
+.callback-form fieldset { 
+	justify-content: center;
+	}
+
+/* modal */
+.info-modal .modal-content { 
+	padding: 35px 25px 25px;
+	}
+
+.modal-content__bottom-panel { 
+	padding: 0;
+	}
+
+}

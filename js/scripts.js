@@ -7,6 +7,14 @@ var swiper = new Swiper("#reviews-slider", {
     draggable: true,
     dragSize: 24
   },
+  breakpoints: {
+    0: {
+      spaceBetween: 20,
+    },
+    480: {
+      spaceBetween: 40,
+    },
+  },
 });
 
 /*- reviews-slider -*/
@@ -18,6 +26,14 @@ var swiper = new Swiper("#reviews-slider2", {
     draggable: true,
     dragSize: 24
   },
+  breakpoints: {
+    0: {
+      spaceBetween: 20,
+    },
+    480: {
+      spaceBetween: 40,
+    },
+  },
 });
 
 /*- reviews-slider -*/
@@ -28,6 +44,14 @@ var swiper = new Swiper("#reviews-slider3", {
     el: "#reviews-slider3 .swiper-scrollbar",
     draggable: true,
     dragSize: 24
+  },
+  breakpoints: {
+    0: {
+      spaceBetween: 20,
+    },
+    480: {
+      spaceBetween: 40,
+    },
   },
 });
 
@@ -126,4 +150,12 @@ const myModal = new HystModal({
         videoframe.contentWindow.postMessage('{"event":"command","func":"stopVideo","args":""}', '*');
     }
   },
+});
+
+/*- mobile menu -*/
+let toggleButton = document.querySelector('.header__mob-btn');
+let navBar = document.querySelector('.header__mob-dropdown');
+toggleButton.addEventListener('click', function () {
+  toggleButton.classList.toggle('open');
+  navBar.classList.toggle('open');
 });
