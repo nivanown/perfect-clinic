@@ -1013,6 +1013,41 @@ label {
 	width: 178px;
 	}
 
+/* success-modal */
+.success-modal .modal-content { 
+	padding: 20px;
+	}
+
+.success-modal__icon {
+	margin: 0 auto 25px;
+	width: 72px;
+	}
+
+.success-modal .v-small-title { 
+	margin: 0 0 25px;
+	}
+
+.success-modal p { 
+	margin: 0 0 20px;
+	font-size: 16px;
+	line-height: 20px;
+	}
+
+.success-modal .list { 
+	margin: 0 0 25px;
+	}
+
+.success-modal .list li { 
+	padding: 0 0 0 28px;
+	font-size: 16px;
+	line-height: 20px;
+	}
+
+.success-modal .list li:before { 
+	width: 16px;
+	height: 16px;
+	}
+
 }
 
 @media (max-width: 580px) {
