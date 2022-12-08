@@ -29,9 +29,11 @@ var swiper = new Swiper("#reviews-slider2", {
   breakpoints: {
     0: {
       spaceBetween: 20,
+      slidesPerView: "auto",
     },
     480: {
       spaceBetween: 40,
+      slidesPerView: "auto",
     },
   },
 });
@@ -48,9 +50,11 @@ var swiper = new Swiper("#reviews-slider3", {
   breakpoints: {
     0: {
       spaceBetween: 20,
+      slidesPerView: "auto",
     },
     480: {
       spaceBetween: 40,
+      slidesPerView: "auto",
     },
   },
 });
@@ -62,6 +66,14 @@ var swiper = new Swiper(".gallery-slider", {
   pagination: {
     el: ".gallery-slider .swiper-pagination",
     clickable: true,
+  },
+  breakpoints: {
+    0: {
+      spaceBetween: 20,
+    },
+    1200: {
+      spaceBetween: 40,
+    },
   },
 });
 
